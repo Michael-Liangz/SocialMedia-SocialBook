@@ -89,7 +89,7 @@ nav {
   right: 0;
 }
 
-/* TODO =============== MAIN PAGE =============== */
+/* TODO =============== MAIN =============== */
 
 .container {
   display: flex;
@@ -449,3 +449,28 @@ nav {
 .post-row a {
   color: #9a9a9a;
 }
+
+.load-more-btn {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #9a9a9a;
+  color: #626262;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.load-more-btn:hover {
+  background: #fff;
+  font-weight: bolder;
+}
+
+/* TODO =============== FOOTER =============== */
+/* ? Copyright Lisence */
+/* .footer {
+  text-align: center;
+  color: #9a9a9a;
+  padding: 10px 0 20px;
+  font-size: 13px;
+} */
