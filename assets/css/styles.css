@@ -419,6 +419,11 @@ nav {
   justify-content: space-between;
 }
 
+.activity-icons {
+  display: flex;
+  justify-content: center;
+}
+
 .activity-icons div img {
   width: 18px;
   margin-right: 10px;
