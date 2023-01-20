@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TODO =============== CSS =============== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>MiKe-ProfilePage-SocialBook</title>
+</head>
+
+<body>
+    <!-- TODO =============== NAV =============== -->
+    <nav>
+        <div class="nav-left">
+            <img src="assets/img/logo2.png" alt="logo2" class="logo">
+            <ul>
+                <li><img src="assets/img/notification.png" alt="notification"></li>
+                <li><img src="assets/img/inbox.png" alt="inbox"></li>
+                <li><img src="assets/img/video.png" alt="video"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="assets/img/search.png" alt="search">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="assets/img/Conan_KID.jpg" alt="Conan_KID">
+            </div>
+        </div>
+
+        <!-- TODO =============== PROFILE-SETTING-MENU =============== -->
+        <div class="settings-menu">
+            <!-- TODO =============== LIGHT / DARK THEME BUTTON =============== -->
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <!-- TODO =============== SETTING-MENU =============== -->
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="assets/img/Conan_KID.jpg" alt="Conan_KID">
+                    <div>
+                        <p>MiKe</p>
+                        <!-- ! Icon "segitiga bawah" dari website "https://fontawesome.com/search", search "caret-down" -->
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="assets/img/feedback.png" alt="feedback">
+                    <div>
+                        <p>Give Feedback</p>
+                        <!-- ! Icon "segitiga bawah" dari website "https://fontawesome.com/search", search "caret-down" -->
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="settings-links">
+                    <img src="assets/img/setting.png" alt="setting" class="settings-icon">
+                    <a href="#">Setting & Privacy
+                        <img src="assets/img/arrow.png" alt="arrow" class="arrow-img">
+                    </a>
+                </div>
+                <div class="settings-links">
+                    <img src="assets/img/help.png" alt="help" class="settings-icon">
+                    <a href="#">Help & Support
+                        <img src="assets/img/arrow.png" alt="arrow" class="arrow-img">
+                    </a>
+                </div>
+                <div class="settings-links">
+                    <img src="assets/img/display.png" alt="display" class="settings-icon">
+                    <a href="#">Display & Accessibility
+                        <img src="assets/img/arrow.png" alt="arrow" class="arrow-img">
+                    </a>
+                </div>
+                <div class="settings-links">
+                    <img src="assets/img/logout.png" alt="logout" class="settings-icon">
+                    <a href="#">Logout
+                        <img src="assets/img/arrow.png" alt="arrow" class="arrow-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- TODO =============== PROFILE PAGE =============== -->
+    <main>
+        <div class="profile-container">
+            <img src="assets/img/cover.png" alt="cover" class="cover-img">
+            <div class="profile-details">
+
+                <!-- TODO =============== PROFILE-DETAIL-LEFT =============== -->
+                <div class="pd-left">
+                    <div class="pd-row">
+                        <img src="assets/img/member-6.png" alt="member-6" class="pd-image">
+                        <div>
+                            <h3>Jane Marry</h3>
+                            <p>200+ Friends - 100+ mutual</p>
+                            <img src="assets/img/Conan_KID.jpg" alt="Conan_KID">
+                            <img src="assets/img/member-1.png" alt="member-1">
+                            <img src="assets/img/member-3.png" alt="member-3">
+                            <img src="assets/img/member-6.png" alt="member-6">
+                            <img src="assets/img/member-8.png" alt="member-8">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TODO =============== PROFILE-DETAIL-RIGHT =============== -->
+                <div class="pd-right">
+                    <button type="button">
+                        <img src="assets/img/add-friends.png" alt="add-friends">
+                        Friend
+                    </button>
+                    <button type="button">
+                        <img src="assets/img/message.png" alt="message">
+                        Message
+                    </button>
+                    <br>
+                    <a href=""><img src="assets/img/more.png" alt="more"></a>
+                </div>
+            </div>
+
+            <div class="profile-info">
+                <div class="info-col">
+                    <div class="profile-intro">
+                        <h3>Intro</h3>
+                        <p class="intro-text">Belive in yourself and you can do unbelievable things.
+                            <img src="assets/img/feeling.png" alt="feeling">
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="post-col">
+                    <!-- TODO =============== WRITE-POST-CONTENT =============== -->
+                    <div class="write-post-container">
+                        <div class="user-profile">
+                            <img src="assets/img/Conan_KID.jpg" alt="Conan_KID">
+                            <div>
+                                <p>MiKe</p>
+                                <!-- ! Icon "segitiga bawah" dari website "https://fontawesome.com/search", search "caret-down" -->
+                                <small>Public <i class="fas fa-caret-down"></i></small>
+                            </div>
+                        </div>
+                        <div class="post-input-container">
+                            <textarea rows="3" placeholder="What's on your mind, MiKe?"></textarea>
+                            <div class="add-post-link">
+                                <a href="#"><img src="assets/img/live-video.png" alt="video"> Live Video</a>
+                                <a href="#"><img src="assets/img/photo.png" alt="video"> Photo/Video</a>
+                                <a href="#"><img src="assets/img/feeling.png" alt="video"> Feeling/Activity</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TODO =============== POST-CONTENT =============== -->
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="assets/img/Conan_KID.jpg" alt="Conan_KID">
+                                <div>
+                                    <p>MiKe</p>
+                                    <span>January 18 2023, 13:55 pm</span>
+                                </div>
+                            </div>
+                            <!-- ! Icon "titik tiga vertikal" dari website "https://fontawesome.com/search", search "ellipsis-v" -->
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        <p class="post-text">First time meeting with team members in discussing about
+                            <span>Socialbook</span>
+                            regarding the development of social media platforms. <br> <br>
+                            <a href="#">#FirstTimeMeeting</a> <a href="#">#FrontEndDeveloper</a>
+                        </p>
+                        <img src="assets/img/feed-image-1.png" alt="feed-image-1" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div>
+                                    <img src="assets/img/like-blue.png" alt="like-blue"> 879
+                                </div>
+                                <div>
+                                    <img src="assets/img/comments.png" alt="comments"> 58
+                                </div>
+                                <div>
+                                    <img src="assets/img/share.png" alt="share"> 25
+                                </div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="assets/img/Conan_KID.jpg" alt="Conan_KID">
+                                <!-- ! Icon "segitiga bawah" dari website "https://fontawesome.com/search", search "caret-down" -->
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="assets/img/member-2.png" alt="member-2">
+                                <div>
+                                    <p>Jackson Jordan</p>
+                                    <span>January 19 2023, 17:55 pm</span>
+                                </div>
+                            </div>
+                            <!-- ! Icon "titik tiga vertikal" dari website "https://fontawesome.com/search", search "ellipsis-v" -->
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        <p class="post-text">Go camping with the team on the <span>day-off</span> to enjoy the beautiful
+                            sunset
+                            views on the beach and the rhythm of the music that enhances the atmosphere, also don't
+                            forget
+                            to
+                            enjoy the delicious grilled sausages. <br> <br>
+                            <a href="#">#DayOff</a> <a href="#">#CampingWithTeam</a>
+                        </p>
+                        <img src="assets/img/feed-image-2.png" alt="feed-image-2" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div>
+                                    <img src="assets/img/like.png" alt="like"> 888
+                                </div>
+                                <div>
+                                    <img src="assets/img/comments.png" alt="comments"> 73
+                                </div>
+                                <div>
+                                    <img src="assets/img/share.png" alt="share"> 20
+                                </div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="assets/img/Conan_KID.jpg" alt="Conan_KID">
+                                <!-- ! Icon "segitiga bawah" dari website "https://fontawesome.com/search", search "caret-down" -->
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="assets/img/member-9.png" alt="member-9">
+                                <div>
+                                    <p>Morgan Gordon</p>
+                                    <span>January 22 2023, 16:25 pm</span>
+                                </div>
+                            </div>
+                            <!-- ! Icon "titik tiga vertikal" dari website "https://fontawesome.com/search", search "ellipsis-v" -->
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        <p class="post-text"> <span>It's Sunday time!!!</span> Walking around the city hall with team
+                            members on
+                            Sundays as a routine is an effective way to refresh the mind and enjoy the city's hustle and
+                            bustle.
+                            By releasing the fatigue of the week's activities, we can start Monday with a fresher and
+                            more
+                            productive approach in carrying out activities. <br> <br>
+                            <a href="#">#SundayTime</a> <a href="#">#CityHall</a>
+                        </p>
+                        <img src="assets/img/feed-image-3.png" alt="feed-image-3" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div>
+                                    <img src="assets/img/like.png" alt="like"> 789
+                                </div>
+                                <div>
+                                    <img src="assets/img/comments.png" alt="comments"> 56
+                                </div>
+                                <div>
+                                    <img src="assets/img/share.png" alt="share"> 18
+                                </div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="assets/img/Conan_KID.jpg" alt="Conan_KID">
+                                <!-- ! Icon "segitiga bawah" dari website "https://fontawesome.com/search", search "caret-down" -->
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="assets/img/member-8.png" alt="member-8">
+                                <div>
+                                    <p>Stephany Johnson</p>
+                                    <span>January 23 2023, 09:10 am</span>
+                                </div>
+                            </div>
+                            <!-- ! Icon "titik tiga vertikal" dari website "https://fontawesome.com/search", search "ellipsis-v" -->
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        <p class="post-text">Good morning everyone!!! Let's start the week off with a bang by having a
+                            <span>Productive Monday</span>. Kicking off the day with a meeting with our beloved manager.
+                            Let's
+                            all show her our enthusiasm and give our best effort. I'm feeling on fire and ready to take
+                            on
+                            the
+                            day! Let's do this. <br> <br>
+                            <a href="#">#ProductiveMonday</a> <a href="#">#OnFire!!!</a>
+                        </p>
+                        <img src="assets/img/feed-image-4.png" alt="feed-image-4" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div>
+                                    <img src="assets/img/like-blue.png" alt="like-blue"> 999
+                                </div>
+                                <div>
+                                    <img src="assets/img/comments.png" alt="comments"> 224
+                                </div>
+                                <div>
+                                    <img src="assets/img/share.png" alt="share"> 155
+                                </div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="assets/img/Conan_KID.jpg" alt="Conan_KID">
+                                <!-- ! Icon "segitiga bawah" dari website "https://fontawesome.com/search", search "caret-down" -->
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-container">
+                        <div class="post-row">
+                            <div class="user-profile">
+                                <img src="assets/img/member-3.png" alt="member-3">
+                                <div>
+                                    <p>Alice Mcqueen</p>
+                                    <span>January 23 2023, 14:25 pm</span>
+                                </div>
+                            </div>
+                            <!-- ! Icon "titik tiga vertikal" dari website "https://fontawesome.com/search", search "ellipsis-v" -->
+                            <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                        <p class="post-text">Today is a great monday as we have the opportunity to meet and discuss with
+                            our
+                            valued investor clients. Building strong <span>partnerships and collaborations</span> with
+                            other
+                            companies is key to our success. Let's make the most of this opportunity and create lasting
+                            connections. <br> <br>
+                            <a href="#">#BusinessPartnerships</a> <a href="#">#Collaboration</a>
+                        </p>
+                        <img src="assets/img/feed-image-5.png" alt="feed-image-5" class="post-img">
+                        <div class="post-row">
+                            <div class="activity-icons">
+                                <div>
+                                    <img src="assets/img/like-blue.png" alt="like-blue"> 903
+                                </div>
+                                <div>
+                                    <img src="assets/img/comments.png" alt="comments"> 75
+                                </div>
+                                <div>
+                                    <img src="assets/img/share.png" alt="share"> 47
+                                </div>
+                            </div>
+                            <div class="post-profile-icon">
+                                <img src="assets/img/Conan_KID.jpg" alt="Conan_KID">
+                                <!-- ! Icon "segitiga bawah" dari website "https://fontawesome.com/search", search "caret-down" -->
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- TODO =============== FOOTER =============== -->
+    <!-- ? Copyright Lisence -->
+    <!-- <footer>
+        <div class="footer">
+            <p>Copyright 2023 - MiKe</p>
+        </div>
+    </footer> -->
+
+    <!-- TODO =============== MAIN JS =============== -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- TODO =============== FONT AWESOME JS =============== -->
+    <!-- ! icon dari website https://fontawesome.com/ -->
+    <script src="https://kit.fontawesome.com/3f1f507f34.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
