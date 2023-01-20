@@ -313,6 +313,10 @@ nav {
   padding: 4px 0;
 }
 
+.right-event p i {
+  color: #1876f2;
+}
+
 .sidebar-ads {
   width: 100%;
   margin-bottom: 20px;
@@ -433,7 +437,7 @@ nav {
 }
 
 .user-profile p {
-  margin-bottom: -5px;
+  /* margin-bottom: -5px; */
   font-weight: 500;
   color: var(--text-color);
 }
