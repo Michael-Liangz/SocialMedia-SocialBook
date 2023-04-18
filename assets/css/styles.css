@@ -32,7 +32,9 @@ nav {
 }
 
 .logo {
-  width: 160px;
+  color: white;
+  font-size: 27px;
+  /* width: 160px; */
   margin-right: 45px;
 }
 
@@ -40,6 +42,10 @@ nav {
 .nav-right {
   display: flex;
   align-items: center;
+}
+
+.nav-left a {
+  text-decoration: none;
 }
 
 .nav-left ul li {
@@ -789,13 +795,15 @@ nav {
   }
 
   .logo {
-    width: 110px;
+    /* width: 110px; */
+    font-size: 18px;
     margin-right: 20px;
   }
 
   .nav-left ul li img {
     width: 20px;
     margin: 0 8px;
+    padding-top: 8px;
   }
 
   .nav-user-icon {
