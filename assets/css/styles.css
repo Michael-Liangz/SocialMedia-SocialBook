@@ -182,14 +182,14 @@ nav {
 
 #dark-btn.dark-btn-on {
   padding-left: 23px;
-  background: #0a0a0a;
+  background: hsl(252, 30%, 30%);
 }
 
 /* TODO =============== DARK THEME =============== */
 .dark-theme {
-  --body-color: #0a0a0a;
-  --nav-color: #000;
-  --bg-color: #000;
+  --body-color: hsl(252, 30%, 10%);
+  --nav-color: hsl(252, 30%, 25%);
+  --bg-color: hsl(252, 30%, 17%);
   --text-color: #fff;
 }
 
